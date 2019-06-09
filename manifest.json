@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "No Mouse",
+    "description": "This extension helps us use the browser without a mouse",
+    "version": "1.0",
+    "permissions": [
+        "activeTab",
+        "<all_urls>",
+        "storage"
+    ],
+    "content_scripts": [
+	{
+	    "matches": ["http://*/*"],
+	    "matches": ["https://*/*"],
+	    "js": ["noMouse.js"]
+	}
+    ]
+}
